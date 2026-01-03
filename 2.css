@@ -1,0 +1,95 @@
+/* 页面标题 */
+.page-title {
+  text-align: center;
+  font-size: 48px;
+  margin: 60px 0;
+  color: var(--light-blue);
+  text-shadow: 0 0 8px var(--primary-blue);
+  position: relative;
+  z-index: 1;
+}
+
+/* 角色网格布局 */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 角色卡片样式 */
+.character-card {
+  background-color: var(--transparent-blue);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid var(--light-blue);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 头像容器 */
+.avatar-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--light-blue);
+  margin-bottom: 10px;
+}
+
+.character-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 角色信息样式 */
+.character-name {
+  font-size: 24px;
+  color: var(--light-blue);
+  margin-bottom: 10px;
+}
+
+.character-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.character-quote {
+  font-size: 16px;
+  color: var(--light-blue);
+  font-style: italic;
+}
+
+/* 返回按钮样式 */
+.back-btn {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 36px;
+    margin: 40px 0;
+  }
+  
+  .characters-grid {
+    grid-template-columns: 1fr;
+  }
+}

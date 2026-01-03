@@ -1,0 +1,51 @@
+/* 全局重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+
+/* 蓝色系主题变量 */
+:root {
+  --primary-blue: #2518e4e6;
+  --secondary-blue: #3e87cfd0;
+  --light-blue: #89b5cd;
+  --dark-blue: #94d5d7;
+  --transparent-blue: rgb(34, 136, 173);
+}
+
+body {
+  background-color: var(--dark-blue);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 按钮通用样式 */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--secondary-blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 容器通用样式 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
